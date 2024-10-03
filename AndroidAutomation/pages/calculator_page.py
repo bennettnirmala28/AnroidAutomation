@@ -1,7 +1,6 @@
 from appium.webdriver.common.appiumby import AppiumBy
 from AndroidAutomation.base.base_page import BasePage
 
-
 class CalculatorPage(BasePage):
     # Locators for the calculator buttons
     button_2 = (AppiumBy.ID,"com.sec.android.app.popupcalculator:id/bt_02")

@@ -20,9 +20,9 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(result, '5')
 
 
-#def tearDown(self):
+    def tearDown(self):
     # Quit the Appium driver
-#    self.calculator.quit()
+     self.calculator.quit()
 
 
 if __name__ == "__main__":

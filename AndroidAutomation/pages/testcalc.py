@@ -2,7 +2,7 @@ from appium import webdriver
 from appium.options.android import UiAutomator2Options
 from selenium.webdriver.common.by import By
 
-desired_caps = {
+desired_cap = {
     "platformName": "Android",
     "appium:deviceName":"Galaxy A7 (2016)",
     "appium:udid": "33002ba21785c219",
@@ -14,7 +14,7 @@ desired_caps = {
     "appium:noReset":True
 }
 
-options = UiAutomator2Options().load_capabilities(desired_caps)
+options = UiAutomator2Options().load_capabilities(desired_cap)
 driver = webdriver.Remote('http://localhost:4723/wd/hub',options=options)
 
 # Add a wait to allow the app to load properly
