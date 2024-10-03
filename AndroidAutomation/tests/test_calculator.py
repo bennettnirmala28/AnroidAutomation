@@ -13,17 +13,15 @@ class CalculatorTest(unittest.TestCase):
         self.calculator.press_plus()
         self.calculator.press_3()
         self.calculator.press_equal()
-        self.calculator.get_result()
+        self.calculator.result_field()
 
         # Verify the result
-        result = self.calculator.get_result()
+        result = self.calculator.result_field()
         self.assertEqual(result, '5')
-
 
     def tearDown(self):
     # Quit the Appium driver
      self.calculator.quit()
-
 
 if __name__ == "__main__":
     unittest.main()

@@ -18,7 +18,7 @@ options = UiAutomator2Options().load_capabilities(desired_cap)
 driver = webdriver.Remote('http://localhost:4723/wd/hub',options=options)
 
 # Add a wait to allow the app to load properly
-driver.implicitly_wait(30)
+driver.implicitly_wait(40)
 
 # Optionally, perform operations (e.g., click buttons)
 # Example: Click "2", "+", "3", "=" on the calculator
