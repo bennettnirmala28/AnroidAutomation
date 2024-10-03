@@ -4,7 +4,7 @@ from appium.options.android import UiAutomator2Options
 
 class BasePage:
     def __init__(self):
-        desired_caps = {
+        desired_capabilities = {
             "platformName": "Android",
             "appium:deviceName": "Galaxy A7 (2016)",
             "appium:udid": "33002ba21785c219",
@@ -16,7 +16,7 @@ class BasePage:
             "appium:noReset": True
         }
 
-        options = UiAutomator2Options().load_capabilities(desired_caps)
+        options = UiAutomator2Options().load_capabilities(desired_capabilities)
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', options=options)
 
     def quit(self):
